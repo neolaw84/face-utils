@@ -1,0 +1,6 @@
+wheel
+CMake
+pillow
+numpy
+scipy
+requests
