@@ -1,5 +1,6 @@
 import os
-import tempfile
+import cv2
+from matplotlib import pyplot as plt
 
 import bz2
 import requests
@@ -33,3 +34,22 @@ def download_model():
         data = bz2.BZ2File(temp_path).read()
         f.write(data)
     
+def imshow_notebook(img):
+    _img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    plt.imshow(_img)
+    plt.show()
+
+def plot_it(mps):
+    x = mps[:, 0]
+
+    y = -1 * mps[:, 1]
+
+    z = mps[:, 2]
+
+    fig = plt.figure()
+
+    ax = fig.add_subplot(111, projection="3d")
+
+    ax.scatter(x, z, y)
+
+    plt.show()

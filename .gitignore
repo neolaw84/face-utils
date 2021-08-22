@@ -130,5 +130,9 @@ dmypy.json
 
 tests/bins/*.*
 tests/bins
+tests/images/*.*
+tests/images
 
 .vscode
+
+**/*.ipynb
