@@ -1,2 +1,6 @@
+wheel
 dlib
 imageio
+insightface
+mxnet
+onnxruntime

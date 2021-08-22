@@ -132,3 +132,5 @@ tests/bins/*.*
 tests/bins
 
 .vscode
+
+**/*.ipynb
